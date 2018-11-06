@@ -31,4 +31,4 @@ https://www.linkedin.com/pulse/how-implement-voting-functionality-ruby-rails-app
 
 
 ### 1 Vote per User
-![](/images/vote-ui.png)
+![](/app/assets/images/vote-ui.png)
