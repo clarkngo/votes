@@ -5,8 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,8 +12,15 @@
   <tbody>
     <% @parties.each do |party| %>
       <tr>
-        <td><%= party.title %></td>
-        <td><%= party.image %></td>
+        <%= party.name %>
+        <br />
+        <br />
+        <%= link_to like_party_path(party), method: :put do %>
+          Like
+          <%= party.get_upvotes.size %>          
+        <% end %>
+        <br />
+        <br />        
         <td><%= link_to 'Show', party %></td>
         <td><%= link_to 'Edit', edit_party_path(party) %></td>
         <td><%= link_to 'Destroy', party, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,3 +32,4 @@
 <br>
 
 <%= link_to 'New Party', new_party_path %>
+

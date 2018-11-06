@@ -14,8 +14,6 @@ class PartiesTest < ApplicationSystemTestCase
     visit parties_url
     click_on "New Party"
 
-    fill_in "Image", with: @party.image
-    fill_in "Title", with: @party.title
     click_on "Create Party"
 
     assert_text "Party was successfully created"
@@ -26,8 +24,6 @@ class PartiesTest < ApplicationSystemTestCase
     visit parties_url
     click_on "Edit", match: :first
 
-    fill_in "Image", with: @party.image
-    fill_in "Title", with: @party.title
     click_on "Update Party"
 
     assert_text "Party was successfully updated"

@@ -17,7 +17,7 @@ class PartiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create party" do
     assert_difference('Party.count') do
-      post parties_url, params: { party: { image: @party.image, title: @party.title } }
+      post parties_url, params: { party: {  } }
     end
 
     assert_redirected_to party_url(Party.last)
@@ -34,7 +34,7 @@ class PartiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update party" do
-    patch party_url(@party), params: { party: { image: @party.image, title: @party.title } }
+    patch party_url(@party), params: { party: {  } }
     assert_redirected_to party_url(@party)
   end
 

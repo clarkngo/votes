@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+# form submission
+gem 'simple_form', '~> 4.0.1'
+# Vote table
+gem 'acts_as_votable'
 # Deviser
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -61,6 +61,11 @@ class PartiesController < ApplicationController
     end
   end
 
+  def upvote
+    @party = Party.find(params[:id])
+    @party.upvote_from current_user
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_party
@@ -69,6 +74,6 @@ class PartiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def party_params
-      params.require(:party).permit(:title, :image)
+      params.require(:party).permit(:name)
     end
 end
