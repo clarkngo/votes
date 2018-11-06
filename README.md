@@ -24,3 +24,7 @@ Things you may want to cover:
 * ...
 
 https://www.youtube.com/watch?v=tzqReZwfMFs
+
+
+Voting gem
+https://www.linkedin.com/pulse/how-implement-voting-functionality-ruby-rails-app-shraddha-chaturvedi
