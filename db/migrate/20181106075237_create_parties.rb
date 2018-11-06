@@ -1,6 +1,6 @@
-class CreateMovies < ActiveRecord::Migration[5.2]
+class CreateParties < ActiveRecord::Migration[5.2]
   def change
-    create_table :movies do |t|
+    create_table :parties do |t|
       t.string :title
       t.string :image
 
