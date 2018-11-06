@@ -28,3 +28,7 @@ https://www.youtube.com/watch?v=tzqReZwfMFs
 
 Voting gem
 https://www.linkedin.com/pulse/how-implement-voting-functionality-ruby-rails-app-shraddha-chaturvedi
+
+
+### 1 Vote per User
+![](/images/vote-ui.png)
