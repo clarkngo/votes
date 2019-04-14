@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+gem "actionview", ">= 5.2.2.1"
+gem "railties", ">= 5.2.2.1"
 # form submission
 gem 'simple_form', '~> 4.0.1'
 # Vote table
